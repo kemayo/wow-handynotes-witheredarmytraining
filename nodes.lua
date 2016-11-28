@@ -17,7 +17,7 @@ ns.points = {
     ["FalanaarTunnelsScenario"] = {
         [29804260]={ level=1, quest=43149, item=139010, label="Treasure Chest", note="+25% HP. Requires 5 withered.", },
         [30007000]={ level=1, quest=43146, item=140451, label="Glimmering Treasure Chest", note="Withered Mana-Rager. Requires 10 withered.", },
-        [33305140]={ level=1, quest=43140, item=140778, label="Treasure Chest", note="Bank in Shal'aran. Under stairs. Requires 5 withered.", },
+        [38805350]={ level=1, quest=43140, item=140778, label="Treasure Chest", note="Bank in Shal'aran. Under stairs. Requires 5 withered.", },
         [40801350]={ level=1, quest=43071, item=139011, label="Glimmering Treasure Chest", note="Withered Berserker. Requires 10 withered.", },
         [75902840]={ level=1, quest=43120, item=139018, label="Treasure Chest", note="Withered more efficiently focus their attacks. Requires 5 withered.", },
         [32506440]={ level=2, quest=43145, item=140450, label="Glimmering Treasure Chest", note="Withered Berserker. Requires 10 withered.", },
