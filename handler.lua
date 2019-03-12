@@ -7,7 +7,6 @@ ns.HL = HL
 
 local next = next
 local GameTooltip = GameTooltip
-local WorldMapTooltip = WorldMapTooltip
 local HandyNotes = HandyNotes
 
 local function work_out_texture(atlas)
@@ -68,7 +67,7 @@ local HLHandler = {}
 local info = {}
 
 function HLHandler:OnEnter(mapFile, coord)
-    local tooltip = self:GetParent() == WorldMapFrame:GetCanvas() and WorldMapTooltip or GameTooltip
+    local tooltip = GameTooltip
     if ( self:GetCenter() > UIParent:GetCenter() ) then -- compare X coordinate
         tooltip:SetOwner(self, "ANCHOR_LEFT")
     else
@@ -145,11 +144,7 @@ do
 end
 
 function HLHandler:OnLeave(mapFile, coord)
-    if self:GetParent() == WorldMapFrame:GetCanvas() then
-        WorldMapTooltip:Hide()
-    else
-        GameTooltip:Hide()
-    end
+    GameTooltip:Hide()
 end
 
 do
